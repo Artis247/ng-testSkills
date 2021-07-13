@@ -1,0 +1,14 @@
+<img src={{images[numberOfTest]}}/>
+<article>
+	<h2>{{textOfTest[numberOfTest][0]}}</h2>
+	<h2><span>{{rezult[numberOfTest]}}</span></h2>
+<select [formControl]="selectControl">
+  <option value="1">{{textOfTest[numberOfTest][1]}}</option>
+  <option value="2">{{textOfTest[numberOfTest][2]}}</option>
+  <option value="3">{{textOfTest[numberOfTest][3]}}</option>
+  <option value="4">{{textOfTest[numberOfTest][4]}}</option>
+  
+</select>
+<!--<p><span>Вы выбрали: </span><b>{{selectControl.value}}</b></p>-->
+<button (click)="estimateMethod()">Ответ</button>
+</article>
